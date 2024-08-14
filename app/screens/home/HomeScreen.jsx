@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import MapComponent from '../../components/map/Map';
 import NoticeComponent from '../../components/notice/Notice';
-import SearchBarComponent from '../../components/searchbar/SearchBar';
 import ARCameraBtn from '../../components/button/LongBtn';
+import CurrentPosition from '../../components/test/test';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <NoticeComponent></NoticeComponent>
-      <SearchBarComponent></SearchBarComponent>
       <MapComponent></MapComponent>
-      <ARCameraBtn></ARCameraBtn>
+      {/* <ARCameraBtn></ARCameraBtn> */}
+      <CurrentPosition></CurrentPosition>
     </View>
   );
 }
