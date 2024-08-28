@@ -8,7 +8,7 @@ export default function MapComponent() {
     <SafeAreaView style={styles.container}>
       <WebView
         style={styles.webview}
-        source={{uri: KAKAO_MAP}}
+        source={{uri: 'https://tabara-browser.vercel.app/'}}
         javaScriptEnabled={true}
         domStorageEnabled={true}
         originWhitelist={['*']}

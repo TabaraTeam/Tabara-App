@@ -4,15 +4,17 @@ import MapComponent from '../../components/map/Map';
 import NoticeComponent from '../../components/notice/Notice';
 import ARCameraBtn from '../../components/button/LongBtn';
 import CurrentPosition from '../../components/test/test';
+import WatchPosition from '../../components/test/RealTime';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <NoticeComponent></NoticeComponent>
+      <NoticeComponent />
       <MapComponent></MapComponent>
-      {/* <ARCameraBtn></ARCameraBtn> */}
-      <CurrentPosition></CurrentPosition>
-    </View>
+      <CurrentPosition />
+      <WatchPosition />
+      <ARCameraBtn />
+   </View>
   );
 }
 
